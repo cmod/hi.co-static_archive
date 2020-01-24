@@ -1,0 +1,453 @@
+/* -- Document and major block elements ---------------------------------
+*/
+
+	* { padding: 0px; margin: 0px; border: 0;}
+	
+	body, html {
+		padding: 0px;
+		margin: 0px;
+		background-color: #FFF;
+		font-family: "Hoefler Text", Georgia, "Times New Roman", serif;
+		}
+	
+	body { 
+	    font-size: 62.5%; /* -- Sets 1em to equal 10px ---------------------------------*/
+	    }
+
+	#wrapper {
+			width: 750px;
+			margin: 40px;
+			margin-left:151px;
+			}
+
+/* MAP TOOLTIP */
+	div.markerTooltip, div.markerDetail {
+		color: #fff;
+		width: 100px;
+		font-family: Arial, sans-serif;
+		font-weight: normal;
+		font-size: 9px;
+		text-transform: uppercase;
+		background-color: #222;
+		padding: 2px 4px;
+		border: 1px solid #333;
+		}
+		
+
+/* BASIC HTML ELEMENTS */
+
+	#wrapper a {
+		text-decoration: none;
+		color: #4d743d;
+		}
+		
+	#wrapper a:hover {
+		color: #3c3c31;
+		}
+
+
+/* More Specific Inline Text Styling */
+
+	sup {
+			line-height: .8;
+			font-weight: bold;
+			font-size: .67em;
+			}
+			
+	.allcaps {
+			text-transform: lowercase;
+			font-variant: small-caps;
+			font-style: normal;
+			}
+	
+	em {
+		font-style: italic;
+		}
+		
+	strong {
+		font-style:black;
+		}
+
+
+
+/* Main Content Body */
+
+	#mainbody {
+		width:750px;
+		display:block;
+		}
+
+/* Masthead */
+
+	#masthead {
+		width:750px;
+	    background: white url("../img/line_horiz_2.gif") -110px bottom no-repeat;
+	    height:79px;
+	    padding-bottom:0px;
+	    margin-bottom:17px;
+		display: block;
+		}
+	
+	h1 {
+			float:left;
+			display: inline;
+			width:164px;
+			height:39px;
+	    background: transparent url("../img/masthead_logo.gif") 0 0 no-repeat;
+		 	}
+	
+	
+	h1 a:link,
+	h1 a:visited,
+	h1 a:hover,
+	h1 a:active {
+			width: 164px;
+			display: inline;
+			float: left;
+			line-height:39px;
+			padding-top:39px;
+			background-color: transparent;
+			height: 0px !important;
+			height /**/:39px;
+			overflow: hidden;
+			}
+	
+	#masthead #sitemotto,
+	#masthead #sitemotto-nyc,
+	#masthead #sitemotto-london,
+	#masthead #sitemotto-worldwide {
+			width:271px;
+			display: inline;
+			float: left;
+			margin-left:4px;
+			line-height:45px;
+			padding-top:39px;
+			height: 0px !important;
+			height /**/:39px;			
+	    	background: transparent url("../img/masthead_slogan.gif") 0 30px no-repeat;
+			overflow: hidden;
+	    }
+
+	#masthead #sitemotto-nyc {
+			width:271px;
+			margin-left:4px;			
+	    	background: transparent url("../img/masthead_slogan-nyc.gif") 0 30px no-repeat;
+	    }
+
+	#masthead #sitemotto-london {
+			width:299px; 
+			margin-left:4px;			
+	    	background: transparent url("../img/masthead_slogan-london.gif") 0 30px no-repeat;
+	    }
+
+	#masthead #sitemotto-worldwide {
+		width: 271px;
+		margin-left: 4px;
+		background: transparent url("../img/masthead_slogan-worldwide.png") 0 30px no-repeat;
+		}    	    
+
+/* ARCHIVE */
+
+	#archive {
+		width:750px;
+		display: block;
+		clear: left;
+		margin-top:16px;
+		padding-top:19px;
+	  	background: white url("../img/line_horiz_2.gif") left top no-repeat;
+		}
+
+
+	#archive a:hover {
+		background-color: #E5f0a6;
+		}
+
+	#archive_left,
+	#archive_right {
+		width:362px;
+		display: inline;
+		float: left;
+		}
+
+	#archive_right {
+		margin-left:25px;
+		}
+
+	#archive .issue_no {
+		display: inline;
+		}
+
+	#archive h3 {
+		font-weight: normal;
+		}
+
+	#archive h3 span.author {
+		font-variant: small-caps;
+		white-space: nowrap;
+		text-transform: lowercase;
+		}
+	
+	#archive .quote_xs {
+		font-size:1.0em;
+		line-height: 1.4;
+		margin-bottom: 1.8em;
+		}
+
+	#archive .quote_xs span {
+		font-size: 1.8em;
+		}
+
+	
+	#archive .quote_s {
+		font-size:1.4em;
+		line-height: 1;
+		margin-bottom: 1.28em;
+		}
+
+	#archive .quote_s span {
+		font-size: 1.28em;
+		}
+
+	#archive .quote_m {
+		font-size:1.8em;
+		line-height: 1;
+		margin-bottom: 1em;
+		}
+
+	#archive .quote_m span {
+		font-size: 1em;
+		}
+	
+	
+	#archive .quote_l {
+		font-size:2.4em;
+		line-height: .75;
+		margin-bottom: .75em;
+		}
+
+	#archive .quote_l span {
+		font-size: .75em;
+		}
+
+	#archive .quote_xl {
+		font-size:3em;
+		line-height: .8;
+		margin-bottom: .8em;
+		}
+
+	#archive .quote_xl span {
+		font-size: .6em;
+		}
+
+/* BOTTOM NAV */
+
+	#bot_nav {
+		width:750px;
+		display: block;
+		clear: left;
+		padding-top:18px;
+	  	background: white url("../img/line_horiz_1.gif") -50px 0px no-repeat;		
+		}
+
+	#ourbelovedhosts,
+	#what_is_hitotoki,
+	#submissions,
+	#subscribe	{
+		width:240px;
+		display: inline;
+		float: left;
+		margin-bottom:18px;
+		}
+
+	#submissions,
+	#subscribe	{
+		margin-left:13px;
+		}
+
+	#what_is_hitotoki dt,
+	#ourbelovedhosts h3,
+	#submissions h3,
+	#subscribe #subscribe_rss,
+	#subscribe #subscribe_rss a:link, 
+	#subscribe #subscribe_rss a:visited, 
+	#subscribe #subscribe_rss a:hover, 
+	#subscribe #subscribe_rss a:active{
+			width: 230px;	
+			display: inline;
+			float: left;
+			background-color: transparent;
+			margin-bottom: 9px;
+			text-indent: -4000px;
+			height:18px;
+			overflow: hidden;		
+		}
+
+	#ourbelovedhosts h3 {
+		background: white url("../img/h3/txt-supported_by.png") left top no-repeat;
+		}
+	  
+	#what_is_hitotoki dt {
+	  background: white url("../img/botnav_h3_hitotoki.gif") left top no-repeat;
+	  }
+
+	#submissions h3 {
+	  background: white url("../img/botnav_h3_submit.gif") left top no-repeat;		
+	  }
+
+	#submissions #download {
+	height:12px;
+	width:230px;
+	float:left;
+	display: inline;
+	}
+
+	#submissions #download a {
+		display: inline;
+		float:left;
+		width:230px;
+		line-height:14px;
+		padding-top:12px;
+		height: 0px !important;
+		height /**/:12px;
+		overflow: hidden;
+		background: white url("../img/link_submission_form.png") left top no-repeat;	
+	}
+
+	#subscribe #subscribe_rss,
+	#subscribe #subscribe_email {
+		width:230px;
+		height: 18px;
+		margin-bottom:9px;
+		display:inline;
+		float:left;	
+		}
+		
+		#subscribe h3#txt-cityname-london, 
+		#subscribe h3#txt-cityname-newyork, 
+		#subscribe h3#txt-cityname-tokyo,	
+		#subscribe h3#txt-cityname-tokyo_ja {
+			width: 230px;	
+			display: inline;
+			float: left;
+			clear: both;
+			background-color: transparent;
+			height:18px;
+			margin-bottom: 9px;
+			text-indent:-4000px;
+			overflow: hidden;
+			}
+			
+		#subscribe h3#txt-cityname-london 	{ background: white url("../img/h3/txt-cityname-london.png") left top no-repeat; }
+		#subscribe h3#txt-cityname-newyork 	{ background: white url("../img/h3/txt-cityname-newyork.png") left top no-repeat; }
+		#subscribe h3#txt-cityname-tokyo 	{ background: white url("../img/h3/txt-cityname-tokyo.png") left top no-repeat; }
+		#subscribe h3#txt-cityname-tokyo_ja { background: white url("../img/txt-cityname-tokyo_ja.png.html") left top no-repeat; }
+			
+	#subscribe #subscribe_email {
+			line-height:18px;
+			padding-top:18px;
+			height: 0px !important;
+			height /**/:18px;
+			overflow: hidden;
+		  background: white url("../img/botnav_email.gif") left top no-repeat;		
+	  }			
+
+	#subscribe #subscribe_rss {
+	  background: white url("../img/botnav_rss.gif") left top no-repeat;		
+	  }
+
+	#submissions p,
+	#ourbelovedhosts p,
+	#what_is_hitotoki dd { 
+			font-size: 1.4em;
+			line-height: 1.28;
+			margin-bottom:1.28em;
+			}
+
+	#subscribe #feedback 
+			{
+			width: 150px;
+			height:1.6em;
+			vertical-align: middle;
+			padding-tp:.2em;
+			margin-right:10px;
+			padding-left:.2em;
+			border: 1px solid #888;
+			background: transparent url("../img/form_off_bg.gif") top left no-repeat;
+			}
+
+	#subscribe #feedback:focus 
+			{
+		border: 1px solid #555;
+		background: transparent url("../img/form_bg.gif") top left no-repeat;
+			}
+
+	#subscribe #subscribe_submit {
+	vertical-align: middle;
+			}
+
+
+/* 	FOOTER 	*/
+	
+	#footer {
+		width:750px;
+		clear: left;
+		margin-bottom: 50px;
+		margin-right: 0;
+		padding-top: 14px;
+	  background: white url("../img/line_horiz_2.gif") -50px 0px no-repeat;		
+		}
+	
+	#footer #aq_chinmusic {
+		margin-top: 0px;
+		height: 18px;
+		width: 250px;
+		float: left;
+		display: inline;
+	  background: white url("../img/footer_aq_chinmusic.png") 0px 0 no-repeat;
+	}
+	
+	#footer #aq_chinmusic a {
+				line-height: 18px;
+				font-size: .5em;
+				padding-top: 18px;
+				height: 0px !important;
+				height /**/: 18px;
+				float: left;
+				display: inline;
+				overflow: hidden;
+	      }
+
+	
+	#footer #footer_chinmusic {
+				width:160px;
+				margin-left:10px;
+				}
+	
+	#footer #footer_aq {
+				width:50px;
+				margin-left: 0px;
+				}
+	
+	#footer #footer_aq:hover,
+	#footer #footer_aq:active {
+	  			background: white url("../img/footer_aq_chinmusic.png") 0px -18px no-repeat;
+				}
+
+	#footer #footer_chinmusic:hover,
+	#footer #footer_chinmusic:active	 {	  			
+				background: white url("../img/footer_aq_chinmusic.png") -60px -18px no-repeat;
+				}
+
+	#copyright {
+			width: 500px;
+			float: left;
+			display: inline;
+			text-align: right;
+			font-size: .9em;
+			line-height: 1.4;
+			font-family: Arial, sans-serif;
+			padding: 0px;
+			padding-top: 0px;
+			color:#999;
+			text-transform:uppercase;
+			}

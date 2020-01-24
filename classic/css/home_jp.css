@@ -1,0 +1,181 @@
+
+
+/* MAIN BODY */
+	
+
+	#featured {
+		width:425px;
+		overflow: hidden;
+		float: left;
+		display: inline;
+		margin-right:23px;
+		}
+
+/* FEATURED STORY */
+
+	#featured_story {
+		width:425px;
+		float:left;
+		display: inline;
+		height:233px;
+		overflow: hidden;
+		margin-bottom:0px;
+		}
+
+
+	#featured_story a:hover {
+		background-color: #E5f0a6;
+		}
+	
+	#featured_story .featured_poster {
+		width:163px;
+		float: left;
+		height:217px;
+		display: inline;
+		margin-right: 12px;
+		position: relative;
+		}
+	
+	
+	#featured_story .featured_poster .issue_no {
+		z-index: 2;
+		position: absolute;
+		right: 25px;
+		top: 0;
+		background: white;
+		text-align: center;
+		width: 25px;
+		height:12px;
+		font-size: 11px;
+		line-height: 1.1;
+		}
+	
+	#featured_story .featured_poster .issue_no:hover,
+	#story_by_image .issue_no:hover {
+		background-color: #E5f0a6;
+		}
+	
+	#featured_story h2 {
+		font-size: 2.4em;
+		font-weight: normal;
+		line-height: 1.16667;
+		margin-top:2px;
+		width:250px;
+		float: left;
+		display: inline;
+		margin-bottom:1em;
+		}
+	
+	#featured_story p {
+		font-size:1.6em;
+		width:250px;
+		float: left;
+		display: inline;
+		line-height: 1.3333;
+		text-align: right;
+		}
+	
+	#featured_story a {
+		color:black;
+		}
+
+
+
+/* STORY BY IMAGE */
+
+	#story_by_image	{
+		width:440px;
+		float:left;
+		display: inline;
+		padding-top:19px;
+	  	background: transparent url("../img/line_horiz_1.gif") -50px 0px no-repeat;
+		}
+
+	#story_by_image li {
+		list-style: none;
+		width:77px;
+		height:77px;
+		float:left;
+		display:inline;
+		line-height: .5;
+		position: relative;
+		margin-right:7px;
+		margin-bottom: 10px;
+		padding-bottom: 0;
+		border: 1px solid #eee;
+		}
+
+	#story_by_image img { 
+		line-height: .1;
+		margin: 1px;
+		border-bottom: 1px solid white;
+		float:left;
+		display:inline;
+		width: 75px;
+		}
+	
+	#story_by_image li .issue_no {
+			z-index: 2;
+			position: absolute;
+			right: 25px;
+			font-family: Georgia, Times, "Times New Roman", serif;
+			top: 0;
+			background: white;
+			text-align: center;
+			width: 25px;
+			height:12px;
+			font-size: 11px;
+			line-height: 1.1;
+			font-variant: black;
+			}
+
+/* JAPANESE SUBMISSIONS */
+
+	#japanese_submissions {
+		float: left;
+		margin-bottom: 17px;
+		}
+
+	#submissions_ja_download {
+		display: inline;
+		width: 103px;
+		height: 523px;
+		float: left;
+		overflow: hidden;
+		background: transparent url("../img/submissions_eiko_rollover.png") 0px 0px no-repeat;
+		}
+
+			#submissions_ja_download a {
+				display: block;
+				width: 103px;
+				height: 523px;
+				}
+		
+			#submissions_ja_download a:hover {
+				background: transparent url("../img/submissions_eiko_rollover.png") -103px 0px no-repeat;
+				}
+
+/* STORY BY IMAGE */
+
+	#map {
+		float:left;
+		display:inline;
+		width:250px;
+		height:421px;
+		padding-left: 25px;
+		padding-right:0;
+		margin-bottom:16px;
+		background: transparent url("../img/line_vert_1.gif") left top no-repeat;
+		}
+
+	div.markerTooltip, div.markerDetail {
+		color: #fff;
+		width: 100px;
+		font-family: Arial, sans-serif;
+		font-weight: normal;
+		font-size: 9px;
+		text-transform: uppercase;
+		background-color: #222;
+		padding: 2px 4px;
+		border: 1px solid #333;
+		}

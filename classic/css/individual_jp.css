@@ -1,0 +1,361 @@
+
+
+
+	#masthead {
+	margin-bottom: 10px;
+	}
+
+
+
+/*	Generic HTML Elements */
+
+	
+	ul {
+		list-style-type: none;
+		}
+	
+	li {
+		font-size: 2em;
+		line-height: 1.5em;
+			}
+	
+	ol li {
+		font-size: 2em;
+		line-height: 1.5em;    
+		}
+
+	#entry {
+		width: 750px;
+	}
+	
+	#entry p {
+		font-family: "Hiragino Mincho Pro W3", "ヒラギノ明朝 Pro W3", serif;
+		font-size: 1.6em;
+		text-align:justify; 
+		text-justify:inter-ideograph;
+		line-height: 1.75em;
+		margin-bottom: .78em;
+		color: #222;
+		}
+
+
+/* Author Block */
+
+	#author_profile {
+		font-family: "Hiragino Mincho Pro W3", "ヒラギノ明朝 Pro W3", serif;
+		font-size: 1.4em;
+		line-height: 2;
+		padding: 0px 0px 14px 0px;
+		margin-bottom: 12px;
+		border: 0px solid #EBEBE7;
+		background: transparent url("../img/line_horiz_2.gif") bottom left no-repeat;
+		color: #888888;
+		}
+	
+	.author_data {
+		color: #333333;
+		font-style: normal;
+		}
+		
+	#author_profile a:link, 
+	#author_profile a:visited, 
+	#author_profile a:hover, 
+	#author_profile a:active {
+		border-bottom:1px dotted black !important;
+		}
+
+	#author_name {
+		}
+
+/* Main Article */
+	
+	.articleImage {
+			margin-bottom: .75em;
+			margin-top: 5px;
+			float: right;
+			padding-right:0;
+			display: inline;
+			width: 250px;
+			}
+	
+	.pullQuote,  .pullQuote p {
+			float: right;
+			width: 257px;
+			overflow: visible;
+			}
+	
+	#entry .pullQuote p {
+			font-size: 2.4em;
+			line-height: 1.5;
+			text-indent: -8px;
+			padding-left: 8px;
+			overflow: visible;
+			margin-top:13px;
+			margin-bottom: 1em;
+			clear: right;
+			}
+	
+	.pullQuote {
+			margin-left: 20px;
+			overflow: visible;
+			position: relative;
+			}
+	#entry p img {
+			margin-left:5px;
+			}
+
+	.pullQuote #photo_byline {
+			position:absolute;
+			right:0px;
+			top:5px;
+			display: inline;
+			font-size: 9px;
+			line-height: 9px;
+			font-family: Arial, sans-serif;
+			background-color: white;
+			text-transform: uppercase;
+			color: #666;
+			height:11px;
+			border-bottom: 1px solid #eee;
+			border-left: 1px solid #eee;
+			border-right: 0;
+			padding-left:2px;
+			padding-right:2px;
+			padding-top: 1px;
+			padding-bottom:0px;
+			}
+
+
+
+/*	Dotted line Headers */
+
+	h3#location_information,
+	h3#referenced_work {
+		border-top: 0px solid #bbb;
+		line-height: 27px;
+		padding-top: 27px;
+		margin-bottom: 8px;
+		margin-top:12px;
+		height: 0px !important;
+		height /**/: 27px;
+		width:250px;
+		display: block;
+		overflow: hidden;
+		}
+
+	h3#commentary {
+		border-top: 0px solid #bbb;
+		line-height: 27px;
+		padding-top: 27px;
+		margin-bottom: 22px;
+		height: 0px !important;
+		height /**/: 27px;
+		width:600px;
+		display: block;
+		overflow: hidden;
+		}
+	
+	h3#location_information { background: white url("../img/h3_location_ja.png") 0 -23px no-repeat;}
+	h3#commentary { background: white url("../img/h3_commentary_ja.gif") 0 -23px no-repeat;}
+	h3#referenced_work { background: white url("../img/h3_referenced_work_ja.png") 0 -23px no-repeat;}
+
+			
+		
+/* Footnotes */
+
+
+	#referencedWorks {
+			margin-bottom: 18px;
+			margin-right:50px;
+			width: 450px;
+			float: left;
+			display: inline;
+			}
+	
+	#referencedWorks ol {
+			list-style-type: none;
+			margin-left:0;
+			}
+
+	#referencedWorks #fn-1 {background: url("../img/fn-no/1.gif") 0px .4em no-repeat;}
+	#referencedWorks #fn-2 {background: url("../img/fn-no/2.gif") 0px .4em no-repeat;}
+	#referencedWorks #fn-3 {background: url("../img/fn-no/3.gif") 0px .4em no-repeat;}
+	#referencedWorks #fn-4 {background: url("../img/fn-no/4.gif") 0px .4em no-repeat;}
+	#referencedWorks #fn-5 {background: url("../img/fn-no/5.gif") 0px .4em no-repeat;}
+	#referencedWorks #fn-6 {background: url("../img/fn-no/6.gif") 0px .4em no-repeat;}
+	#referencedWorks #fn-7 {background: url("../img/fn-no/7.gif") 0px .4em no-repeat;}
+	#referencedWorks #fn-8 {background: url("../img/fn-no/8.gif") 0px .4em no-repeat;}
+	#referencedWorks #fn-9 {background: url("../img/fn-no/9.gif") 0px .4em no-repeat;}
+	#referencedWorks #fn-10 {background: url("../img/fn-no/10.gif") 0px .4em no-repeat;}
+	#referencedWorks #fn-11 {background: url("../img/fn-no/11.gif") 0px .4em no-repeat;}
+
+	#referencedWorks li {
+			font-size: 1.2em;
+			padding-left:20px;
+			margin-top:0;
+			padding-top:0;
+			line-height: 1.56em;
+			margin-bottom:1.56em;
+			font-weight: bold;
+			font-family: "Helvetica Neue", verdana, sans;
+			}
+
+	#referencedWorks span { font-weight: normal;}
+
+/* Location Information Block */
+
+	#locationInformation {
+			margin-bottom: 36px;
+			width: 250px;
+			float: left;
+			display: inline;
+			}
+	
+	#locWrap {
+			float: left;
+			display: inline;
+			clear: right;
+			}
+	
+
+	#locationInformation p, #locationInformation li {
+			font-size: 1.2em;
+			font-family: helvetica, arial, sans-serif;
+			}
+
+
+/* Comments */
+
+	#comments {
+			background: transparent url("../img/line_horiz_2.gif") top left no-repeat;
+			padding-top:11px;
+			clear: left;
+		}
+
+	.comment {
+			list-style-position: outside;
+			margin-left:2em;
+			}
+	
+	.commentBody {
+			margin-bottom: 36px;
+			font-size: 1.2em;
+			line-height: 1.56em;
+			font-weight: bold;
+			width:625px;
+			font-family: helvetica, arial, sans-serif;
+			}
+	
+	.commentBody span { font-weight: normal;}
+	
+	.commentDate {
+			font-size: 1.2em;
+			margin-left: 24px;
+			margin-bottom: 5px;
+			font-family: helvetica, arial, sans-serif;
+			}
+	
+	
+
+
+/* Form Elements for Comments */
+
+	#addComment {
+			width: 700px;
+			padding-top: 12px;
+			float: left;
+			}
+
+	#addComment	label {
+			width: 100px;
+			margin-right: 15px;
+			float: left;
+			display: inline;
+			font-size: 1.2em;
+			padding-top:.5em;
+			text-align: right;
+			}
+	#addComment  .radio_label {padding-top: 0;}
+	#addComment	input, textarea {
+			margin-bottom: 2em;
+			font-size: 1.4em;
+			font-family: Courier, Monaco, serif;
+			float: left;
+			display: inline;
+			}
+
+	#addComment	input#c_name, 
+	#addComment input#c_website, 
+	#addComment input#c_email,
+	#addComment input#c_location 
+			{
+			width: 200px;
+			height:1.6em;
+			padding-top:.2em;
+			padding-left:.2em;
+			border: 1px solid #888;
+			background: transparent url("../img/form_off_bg.gif") top left no-repeat;
+			}
+
+	#addComment	input#c_name:focus, 
+	#addComment input#c_website:focus, 
+	#addComment input#c_email:focus,
+	#addComment input#c_location:focus 
+			{
+		border: 1px solid #555;
+		background: transparent url("../img/form_bg.gif") top left no-repeat;
+			}
+
+	#addComment input#c_subscribe_comments,
+	#addComment input#c_personal_info
+			{margin-right:190px;
+			border: 0px solid #666;
+			}	
+
+	#addComment	textarea { 
+	width:515px;			
+	border: 1px solid #888;
+	background: transparent url("../img/form_off_bg.gif") top left no-repeat;
+	padding-top:.2em;
+	padding-left:.2em;
+	margin-bottom: 1.4em;
+	}
+	
+	#addComment	textarea:focus { 
+	width:515px;			
+	border: 1px solid #555;
+	background: transparent url("../img/form_bg.gif") top left no-repeat;
+	padding-top:.2em;
+	padding-left:.2em;
+	}	
+	
+	#addComment	#submit {
+			margin-left: 115px;
+			/* border: 1px solid #666;
+			padding:.4em;
+			padding-bottom: 0;
+			padding-top: .25em;
+			font-size: 1.2em;
+			line-height: 1.2em;
+			font-family: Helvetica, sans-serif;
+			background: transparent url("../img/submit_bg.gif") top left no-repeat; */
+			}
+
+/* 	NOTIFICATIONS 	*/
+
+	#notification {
+		text-align: center;
+		padding-top: 5em;
+		padding-bottom: 5em;
+		}
+
+	#notification h2 {
+		font-size: 3em;
+		font-weight: normal;
+		}
+		
+	#notification p {
+		margin-left: 15px;
+		font-size: 1.6em;
+		margin-bottom: 1em;
+		}

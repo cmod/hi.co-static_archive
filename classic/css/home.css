@@ -1,0 +1,270 @@
+
+
+/* MAIN BODY */
+	
+
+	#featured {
+		width:425px;
+		overflow: hidden;
+		float: left;
+		display: inline;
+		margin-right:23px;
+		}
+
+/* FEATURED STORY */
+
+	#featured_story {
+		width:425px;
+		float:left;
+		display: inline;
+		height:233px;
+		overflow: hidden;
+		margin-bottom:0px;
+		}
+
+	#featured_story a:hover {
+		background-color: #E5f0a6;
+		}
+	
+	#featured_story .featured_poster {
+		width:163px;
+		float: left;
+		height:217px;
+		display: inline;
+		margin-right: 12px;
+		position: relative;
+		}
+	
+	
+	#featured_story .featured_poster .issue_no {
+		z-index: 2;
+		position: absolute;
+		right: 25px;
+		top: 0;
+		background: white;
+		text-align: center;
+		width: 25px;
+		height:12px;
+		font-size: 11px;
+		line-height: 1.1;
+		}
+	
+	#featured_story .featured_poster .issue_no:hover,
+	#story_by_image .issue_no:hover {
+		background-color: #E5f0a6;
+		}
+	
+	#featured_story h2 {
+		font-size: 2.4em;
+		font-weight: normal;
+		line-height: 1.16667;
+		width:250px;
+		float: left;
+		display: inline;
+		margin-bottom:1em;
+		}
+	
+	#featured_story p {
+		font-size:1.6em;
+		width:250px;
+		float: left;
+		display: inline;
+		padding-bottom: 0 !important;
+		margin-bottom: 0 !important;
+		line-height: 1.3333;
+		text-align: right;
+		font-style: italic;
+		}
+	
+	#featured_story a {
+		color:black;
+		}
+
+
+
+/* STORY BY IMAGE */
+
+	#story_by_image	{
+		width:440px;
+		float:left;
+		display: inline;
+		padding-top:19px;
+	  	background: transparent url("../img/line_horiz_1.gif") -50px 0px no-repeat;
+		}
+
+	#story_by_image li {
+		list-style: none;
+		width:77px;
+		height:77px;
+		float:left;
+		display:inline;
+		line-height: .5;
+		position: relative;
+		margin-right:7px;
+		margin-bottom: 10px;
+		padding-bottom: 0;
+		border: 1px solid #eee;
+		}
+
+	#story_by_image img { 
+		line-height: .1;
+		margin: 1px;
+		border-bottom: 1px solid white;
+		float:left;
+		display:inline;
+		width: 75px;
+		}
+	
+	#story_by_image li .issue_no {
+			z-index: 2;
+			position: absolute;
+			right: 25px;
+			top: 0;
+			background: white;
+			text-align: center;
+			width: 25px;
+			height:12px;
+			font-size: 11px;
+			line-height: 1.1;
+			font-variant: black;
+			}
+
+	/* -----------------------------------------------------------------
+		SHARING A HITOTOKI IS ....
+	*/
+
+	/* :::::: GENERAL ::::::: */
+	#story_by_image #senden-thumb, #story_by_image #senden-thumb a {
+		width:164px;
+		height:75px;
+		float:left;
+		display:inline;
+		text-indent: -4000px;
+		overflow: hidden;
+		border: 0px !important;
+		padding:0 !important;
+		background: transparent url("../img/txt-sharing_a_hitotoki.gif") left top no-repeat;
+		}
+	
+		
+	#story_by_image li#senden-thumb a:hover {
+		background: transparent url("../img/txt-sharing_a_hitotoki.gif") 0px -75px no-repeat;
+		text-indent: -4000px;
+		height:75px;
+		width:164px;
+		display:block;
+		overflow: hidden;
+		}	
+
+	/* --------------------------------------------
+	   :::::: LONDON ::::::: */
+	#story_by_image #senden-thumb-london, #story_by_image #senden-thumb-london a {
+		width:164px;
+		height:75px;
+		float:left;
+		display:inline;
+		text-indent: -4000px;
+		overflow: hidden;
+		border: 0px !important;
+		padding:0 !important;
+		background: transparent url("../img/london/sharing_london.gif") left top no-repeat;
+		}
+	
+		
+	#story_by_image li#senden-thumb-london a:hover {
+		background: transparent url("../img/london/sharing_london.gif") 0px -75px no-repeat;
+		text-indent: -4000px;
+		height:75px;
+		width:164px;
+		display:block;
+		overflow: hidden;
+		}
+		
+
+	/* --------------------------------------------
+	   :::::: SOFIA ::::::: */
+	#story_by_image #senden-thumb-sofia, #story_by_image #senden-thumb-sofia a {
+		width:164px;
+		height:75px;
+		float:left;
+		display:inline;
+		text-indent: -4000px;
+		overflow: hidden;
+		border: 0px !important;
+		padding:0 !important;
+		background: transparent url("../img/txt-sharing_sofia.gif") left top no-repeat;
+		}	
+
+	#story_by_image li#senden-thumb-sofia a:hover {
+		background: transparent url("../img/txt-sharing_sofia.gif") 0px -75px no-repeat;
+		text-indent: -4000px;
+		height:75px;
+		width:164px;
+		display:block;
+		overflow: hidden;
+		}
+		
+		
+	/* --------------------------------------------
+	   :::::: PARIS ::::::: */
+	#story_by_image #senden-thumb-paris, #story_by_image #senden-thumb-paris a {
+		width:164px;
+		height:75px;
+		float:left;
+		display:inline;
+		text-indent: -4000px;
+		overflow: hidden;
+		border: 0px !important;
+		padding:0 !important;
+		background: transparent url("../img/paris/txt-sharing_a_hitotoki-paris.gif") left top no-repeat;
+		}
+	
+		
+	#story_by_image li#senden-thumb-paris a:hover {
+		background: transparent url("../img/paris/txt-sharing_a_hitotoki-paris.png.html") 0px -75px no-repeat;
+		text-indent: -4000px;
+		height:75px;
+		width:164px;
+		display:block;
+		overflow: hidden;
+		}	
+		
+		
+	/* --------------------------------------------
+	   :::::: SHANGHAI ::::::: */
+	#story_by_image #senden-thumb-shanghai, #story_by_image #senden-thumb-shanghai a {
+		width:164px;
+		height:75px;
+		float:left;
+		display:inline;
+		text-indent: -4000px;
+		overflow: hidden;
+		border: 0px !important;
+		padding:0 !important;
+		background: transparent url("../img/shanghai/txt-sharing_a_hitotoki-shanghai.png") left top no-repeat;
+		}
+	
+		
+	#story_by_image li#senden-thumb-shanghai a:hover {
+		background: transparent url("../img/shanghai/txt-sharing_a_hitotoki-shanghai.png") 0px -75px no-repeat;
+		text-indent: -4000px;
+		height:75px;
+		width:164px;
+		display:block;
+		overflow: hidden;
+		}	
+
+
+/* STORY BY IMAGE */
+
+	#map {
+		float:left;
+		display:inline;
+		width:250px;
+		height:421px;
+		padding-left: 25px;
+		padding-right:0;
+		margin-bottom:16px;
+		background: transparent url("../img/line_vert_1.gif") left top no-repeat;
+		}
+

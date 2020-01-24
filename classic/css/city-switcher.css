@@ -1,0 +1,243 @@
+
+
+	
+ul, li { list-style:none; margin:0; padding:0;}
+
+
+#sitewide-nav {
+	float:left;
+	display:inline;
+	width:309px;
+	height:28px;
+	}
+
+#city-switcher {
+	background: transparent url("../img/line_horiz_2.gif") -50px top no-repeat;
+	width:750px;
+	height:28px;
+	margin-top:11px;
+	margin-left:0px;
+	margin-bottom:5px;
+	float:left;
+	display: inline;
+	}
+
+#city-switcher li,
+#sitewide-nav li { 
+	height:14px;
+	background-image: url("../img/nav_2008.gif");
+	background-color:transparent;
+	display:inline !important;
+	text-indent: -4000px;
+	float:left !important;
+	margin-right:9px;
+	margin-left:5px;
+	}
+
+#sitewide-nav li {	margin-top:28px;	}
+#city-switcher li {	margin-top:10px;	}
+
+/* The last city gets this: */	
+
+#sitewide-nav li a,
+#sitewide-nav li span,
+#city-switcher li a,
+#city-switcher li span  {
+	background-color:transparent;
+	background-image: url("../img/nav_2008.gif");
+	height:14px;	
+	display: block;
+	font-size:5px;
+	overflow: hidden;
+	}	
+
+#sitewide-nav li#nav-about,
+	#sitewide-nav li#nav-about a,
+	#sitewide-nav li#nav-about span { width:41px;}
+	
+#sitewide-nav li#nav-blog,
+	#sitewide-nav li#nav-blog a,
+	#sitewide-nav li#nav-blog span { width:32px;}
+	
+#sitewide-nav li#nav-editorial,
+	#sitewide-nav li#nav-editorial a,
+	#sitewide-nav li#nav-editorial span { width:66px;}
+	
+#sitewide-nav li#nav-submissions,
+	#sitewide-nav li#nav-submissions a,
+	#sitewide-nav li#nav-submissions span	 { width:83px;}		
+
+#city-switcher li#tokyoen,
+	#city-switcher li#tokyoen a,
+	#city-switcher li#tokyoen span { width:41px;}
+
+#city-switcher li#tokyojp,
+	#city-switcher li#tokyojp a,
+	#city-switcher li#tokyojp span { width:20px;}
+
+#city-switcher li#nyc,
+	#city-switcher li#nyc a,
+	#city-switcher li#nyc span { width:65px;}
+
+#city-switcher li#london,
+	#city-switcher li#london a,
+	#city-switcher li#london span { width:52px;}
+	
+#city-switcher li#dc,
+	#city-switcher li#dc a,
+	#city-switcher li#dc span { width:22px;}
+
+#city-switcher li#sofia,
+	#city-switcher li#sofia a,
+	#city-switcher li#sofia span { width:41px;}		
+
+#city-switcher li#bulgarian,
+	#city-switcher li#bulgarian a,
+	#city-switcher li#bulgarian span { width:110px;}
+
+#city-switcher li#english,
+	#city-switcher li#english a,
+	#city-switcher li#english span { width:60px;}
+
+#city-switcher li#paris,
+	#city-switcher li#paris a,
+	#city-switcher li#paris span { width:41px;}
+
+#city-switcher li#french {margin-left:-8px; positition:relative;}
+#city-switcher li#english {margin-left:-8px; positition:relative;}
+#city-switcher li#bulgarian {margin-left:-8px; positition:relative;}
+
+#city-switcher li#french,
+	#city-switcher li#french a,
+	#city-switcher li#french span { width:90px;}
+
+#city-switcher li#shanghai,
+	#city-switcher li#shanghai a,
+	#city-switcher li#shanghai span { width:65px;}
+
+	
+
+/* DEFAULT STATE */
+
+	#sitewide-nav li#nav-about {margin-left:41px;}
+#sitewide-nav li#nav-submissions {margin-right:0px;}
+
+
+#sitewide-nav li#nav-about,
+#sitewide-nav li#nav-about a:link,
+#sitewide-nav li#nav-about a:visited			{ background-position:0px 0px; }
+
+	#sitewide-nav li#nav-blog,
+	#sitewide-nav li#nav-blog a:link,
+	#sitewide-nav li#nav-blog a:visited			{ background-position:0px -20px; }
+
+	#sitewide-nav li#nav-editorial,
+	#sitewide-nav li#nav-editorial a:link,
+	#sitewide-nav li#nav-editorial a:visited	{ background-position:0px -40px; }
+
+	#sitewide-nav li#nav-submissions,
+	#sitewide-nav li#nav-submissions a:link,
+	#sitewide-nav li#nav-submissions a:visited 	{ background-position:0px -60px; }
+
+
+
+#city-switcher li#tokyoen, 
+#city-switcher li#tokyoen a:link,
+#city-switcher li#tokyoen a:visited				{ background-position:0px -80px; }
+
+	#city-switcher li#tokyojp, 
+	#city-switcher li#tokyojp a:link,
+	#city-switcher li#tokyojp a:visited			{ background-position:0px -100px; }
+	
+	#city-switcher li#nyc, 
+	#city-switcher li#nyc a:link,
+	#city-switcher li#nyc a:visited 			{ background-position:0px -120px; }
+	
+	#city-switcher li#london, 
+	#city-switcher li#london a:link,
+	#city-switcher li#london a:visited 			{ background-position:0px -140px; }
+	
+	#city-switcher li#dc, 
+	#city-switcher li#dc a:link,
+	#city-switcher li#dc a:visited 				{ background-position:0px -160px; }
+
+	#city-switcher li#sofia, 
+	#city-switcher li#sofia a:link,
+	#city-switcher li#sofia a:visited 				{ background-position:0px -180px; }
+
+	#city-switcher li#bulgarian, 
+	#city-switcher li#bulgarian a:link,
+	#city-switcher li#bulgarian a:visited 				{ background-position:0px -200px; }
+
+	#city-switcher li#english, 
+	#city-switcher li#english a:link,
+	#city-switcher li#english a:visited 				{ background-position:0px -220px; }
+	
+	#city-switcher li#paris, 
+	#city-switcher li#paris a:link,
+	#city-switcher li#paris a:visited 				{ background-position:0px -240px; }
+
+	#city-switcher li#french, 
+	#city-switcher li#french a:link,
+	#city-switcher li#french a:visited 				{ background-position:0px -260px; }
+
+	#city-switcher li#shanghai, 
+	#city-switcher li#shanghai a:link,
+	#city-switcher li#shanghai a:visited 				{ background-position:0px -280px; }
+
+
+
+/* ON STATE */
+
+#sitewide-nav li#nav-about span				{ background-position:-150px 0px; }
+	#sitewide-nav li#nav-editorial span		{ background-position:-150px -40px; }
+	#sitewide-nav li#nav-submissions span	{ background-position:-150px -60px; }
+	#sitewide-nav li#nav-blog span, #sitewide-nav li#nav-blog a.current			{ background-position:-150px -20px; }
+
+#city-switcher li#tokyoen span				{ background-position:-150px -80px; }
+	#city-switcher li#tokyojp span 			{ background-position:-150px -100px; }
+	#city-switcher li#nyc span 				{ background-position:-150px -120px; }
+	#city-switcher li#london span			{ background-position:-150px -140px; }
+	#city-switcher li#dc span				{ background-position:-150px -160px; }
+	#city-switcher li#sofia span				{ background-position:-300px -180px; }
+		#city-switcher li#bulgarian span				{ background-position:-150px -200px; }
+	#city-switcher li#english span				{ background-position:-150px -220px; }
+	#city-switcher li#paris span				{ background-position:-300px -240px; }
+	#city-switcher li#french span				{ background-position:-150px -260px; }
+	#city-switcher li#shanghai span				{ background-position:-150px -280px; }
+
+
+/* OVER STATE */
+
+#sitewide-nav li#nav-about a:hover, 		
+	#sitewide-nav li#nav-about a:active 			{ background-position:-150px 0px; background-color: transparent; }
+#sitewide-nav li#nav-blog a:hover, 
+	#sitewide-nav li#nav-blog a:active 			{ background-position:-150px -20px; background-color: transparent; }
+#sitewide-nav li#nav-editorial a:hover, 
+	#sitewide-nav li#nav-editorial a:active 		{ background-position:-150px -40px; background-color: transparent; }
+#sitewide-nav li#nav-submissions a:hover, 
+	#sitewide-nav li#nav-submissions a:active 		{ background-position:-150px -60px; background-color: transparent; }
+#city-switcher li#tokyoen a:hover, 
+	#city-switcher li#tokyoen a:active 				{ background-position:-150px -80px; background-color: transparent; }
+#city-switcher li#tokyojp a:hover, 
+	#city-switcher li#tokyojp a:active  			{ background-position:-150px -100px; background-color: transparent; }
+#city-switcher li#nyc a:hover, 
+	#city-switcher li#nyc a:active  				{ background-position:-150px -120px; background-color: transparent; }
+#city-switcher li#london a:hover, 
+	#city-switcher li#london a:active  				{ background-position:-150px -140px; background-color: transparent; }
+#city-switcher li#dc a:hover, 
+	#city-switcher li#dc a:active  					{ background-position:-150px -160px; background-color: transparent; }
+#city-switcher li#sofia a:hover, 
+	#city-switcher li#sofia a:active  					{ background-position:-150px -180px; background-color: transparent; }
+#city-switcher li#bulgarian a:hover, 
+	#city-switcher li#bulgarian a:active  					{ background-position:-150px -200px; background-color: transparent; }
+#city-switcher li#english a:hover, 
+	#city-switcher li#english a:active  					{ background-position:-150px -220px; background-color: transparent; }
+#city-switcher li#paris a:hover, 
+	#city-switcher li#paris a:active  					{ background-position:-150px -240px; background-color: transparent; }
+#city-switcher li#french a:hover, 
+	#city-switcher li#french a:active  					{ background-position:-150px -260px; background-color: transparent; }
+#city-switcher li#shanghai a:hover, 
+	#city-switcher li#shanghai a:active  					{ background-position:-150px -280px; background-color: transparent; }
+
+
