@@ -1,0 +1,82 @@
+find . -name '*.html' | xargs grep -Eo "(http|https)://i.[a-zA-Z0-9./?=_-]*" | sort | uniq
+
+
+find . -name '*.html' | xargs grep -Eo "\"i.hitotoki.org/media/images/preview/[a-zA-Z0-9./?=_-]*\"" | sort | uniq
+
+
+find . -name '*.html' | xargs grep -Eo "i.hitotoki.org/media/images/preview[a-zA-Z0-9./?=_-]*"  | sort | uniq
+
+
+
+find . -name '*.html' -exec grep -Eo "i.hitotoki.org/media/images/preview[a-zA-Z0-9./?=_-]*" {} \; | sort | uniq
+
+
+find . -name '*.html' -exec grep -Eo "i.hitotoki.org/media/images/preview[a-zA-Z0-9./?=_-]*" {} \; | sort | uniq
+
+
+find . -name '*.html' -exec grep -Eo "i.hitotoki.org/media/images/medium[a-zA-Z0-9./?=_-]*" {} \; | sort | uniq
+
+
+
+http(.)+jpg
+
+wget -i ../imageurls-clean-clean.txt
+
+wget -nc --mirror -i ../imageurls-clean-clean.txt
+
+
+wget -nc -r -l inf --no-remove-listing -i ../imageurls-clean-clean.txt
+
+wget -nc -r -l inf --no-remove-listing -i ../imageurls-clean-clean.txt
+
+
+wget -nc -r -l inf --no-remove-listing --convert-links --adjust-extension --page-requisites -i people_urls.txt
+
+wget -nc -np -r -l inf --no-remove-listing --convert-links --adjust-extension --page-requisites -i people_urls.txt
+
+
+
+find . -name '*.html' -exec sed -i '' 's,http://i.hitotoki.org/,/i.hitotoki.org/,g' {} \;
+
+
+find . -name '*.html' -exec sed -i '' 's,https://maps.googleapis.com/maps/api/js?key=AIzaSyC3-E9oY1ylRWuZRprXLCWgMpnRGG_9kuU&amp;language=en&amp;sensor=true,https://maps.googleapis.com/maps/api/js?key=AIzaSyDAXmNggk7EQB3QslScEsZfTFEerxnK43I&amp;language=en&amp,g' {} \;
+
+
+find . -name '*.html' -exec sed -i '' 's,https://maps.googleapis.com/maps/api/js?key=AIzaSyC3-E9oY1ylRWuZRprXLCWgMpnRGG_9kuU\&amp;language=en\&amp;sensor=true,https://maps.googleapis.com/maps/api/js?key=AIzaSyDAXmNggk7EQB3QslScEsZfTFEerxnK43I\&amp;language=en,' {} \;
+
+
+
+find . -name '*.html' -exec sed -i '' 's,loadChartbeat : function() { oldonload(); loadChartbeat(); };,,g' {} \;
+
+
+find . -name '*.html' -exec sed -i '' "s/ga('create', 'UA-98891-19', 'hi.co');/ /g" {} \;
+find . -name '*.html' -exec sed -i '' "s/ga('send', 'pageview');/ /g" {} \;
+
+
+find . -name '*.html' -exec sed -i '' "s/window.onload = (typeof window.onload != 'function') ?/ /g" {} \;
+
+
+
+
+find . -name '*.html' -exec sed -i '' 's,<script type="text/javascript">try{Typekit.load();}catch(e){}</script>,,g' {} \;
+
+
+find . -name '*.html' -exec sed -i '' 's,<script type="text/javascript" src="http://use.typekit.net/jga6kvf.js"></script>,<link rel="stylesheet" href="https://use.typekit.net/mkp3ksc.css">,g' {} \;
+
+
+
+find . -name '*.html' -exec sed -i '' 's,"//i.hitotoki,"/i.hitotoki,g' {} \;
+
+
+find . -name '*.html' -exec sed -i '' 's,../index.html">Home,/">Home,g' {} \;
+
+find . -name '*.html' -exec sed -i '' 's,content="http://hitotoki.org,content="https://hitotoki.org,g' {} \;
+
+find . -name '*.html' -exec sed -i '' 's,http://hitotoki.org,,g' {} \;
+
+
+find . -name '*.html' -exec sed -i '' 's,content="/i.hitotoki.org,content="https://hitotoki.org/i.hitotoki.org,g' {} \;
+
+
+  
+  
