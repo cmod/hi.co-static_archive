@@ -1,0 +1,53 @@
+
+.sketchLocationEditor{ 
+  width:100%; height: 480px; 
+  border:1px solid #c4c5c0;
+  position: absolute; top: 0px; right: 0px;
+  border-radius: 10px;
+}
+.sketchLocationEditor .sketchLocationEditorContainer{
+  position: relative;
+}
+
+/* **********************************
+ * *************** portrait_moment +*
+ * ******************************** */
+
+#portrait_moment .sketchLocationEditor .edit-map{
+  width: 100%; height: 420px;
+  border-color: #f1f2ec;
+  border: 10px solid #f1f2ec;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#portrait_moment .sketchLocationEditor .edit-controls{
+  height: 50px;
+  padding: 5px 0;
+  width: 100%;
+  background-color: #f1f2ec;
+  position: relative;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#portrait_moment .sketchLocationEditor .edit-controls .actions{
+  position: absolute;
+  top: 0px; right: 0px;
+}
+
+
+
+#portrait_moment .sketchLocationEditor{ 
+    
+}
+
+
+/* **********************************
+ * ************** landscape_moment +*
+ * ******************************** */
+
+
+#landscape_moment .sketchLocationEditor{ 
+
+}

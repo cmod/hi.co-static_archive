@@ -1,0 +1,450 @@
+  /*  ------------------------------------------------
+      HI CSS
+
+      (c) 2013 - Moments Management Corp.
+
+
+		TYPE SIZES ----------------------------------
+
+			12			Horiz Line divider labels
+			14			Most metadata
+			16			Bio text ﻿delete?
+      18      About page body text
+			20			Body text, Listed moments, Navigation, Username, About headers
+			23			Faux small caps for 26
+			26			Blockquotes,  Place lists
+			42			Moment text, full names
+
+			Don't add new type sizes close to existing ones.
+			If you need something in between,
+			consider adjusting everything to the new size.
+
+
+		COLORS ----------------------------------
+
+		Grays:
+			#33332b		Dark
+			#666662		Med. Dark
+			#989890		Medium
+			#c4c4bc		Med. Light
+			#e0e0da		Light
+			#e5e5df		Very light
+			#f2f2ed		Very, very light
+
+		Other:
+			#ff0000		Background Red
+			#cc092f		Text/border Red
+			#001e44		Dark blue
+			#00aeff		GeoPin Light Blue
+
+			Don't introduce new colors that are close to existing ones.
+
+
+		TYPE STACKS ----------------------------------
+
+			Serif		"freight-text-pro", "Hiragino Mincho ProN", Meiryo, serif;
+			Sans		"freight-sans-pro", Helvetica, Arial, sans-serif;
+
+      ------------------------------------------------ */
+
+
+  /*  ----------------------------
+      CSS RESET
+      ---------------------------- */
+      body,div,figure,figcaption,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,menu,input,textarea,p,blockquote,th,td { margin:0; padding:0; }
+      table { border-collapse:collapse; border-spacing:0; }
+      fieldset,img { border:0; }
+      address,caption,cite,code,dfn,strong,th,var { font-style:normal; font-weight:normal; }
+        code { font-family: Courier, monospace; }
+      strong { font-weight: bold; }
+      ol,ul { list-style:none; }
+      caption,th { text-align:left; }
+      h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal; }
+      q:before,q:after { content:''; }
+      abbr,acronym { border:0; }
+      a { color: #33332b; text-decoration: none; }
+        a:hover { color: #cc092f; text-decoration: none; }
+      em { font-style: italic; }
+
+      hr { margin-bottom: 2em; border: 0; border-top: 1px solid #e0e0da; }
+
+      input { -webkit-appearance: none; }
+      input:focus, textarea:focus, button:focus { outline: none; box-shadow: none; }
+      .small { font-size: .7em; }
+
+      .sc { font-size: .85em; text-transform: uppercase; letter-spacing: 1px; }
+
+      /* Turn on the stuff that should be on */
+      p {
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
+      }
+
+      .noborder { border: 0px; }
+      .overflowOK { overflow: visible; }
+
+      .cf:before,
+      .cf:after {
+        content: " ";
+        display: table;
+      }
+      .cf:after {
+        clear: both;
+      }
+      .cf {
+        *zoom: 1;
+      }
+
+      * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+
+      .mobileonly { display: none; }
+      .hidden { display: none; }
+
+  /*  ----------------------------
+      GENERAL
+      ---------------------------- */
+      body {
+        background-color: #fff;
+        color: #33332b;
+        font-size: 62.5%; /* -- Sets 1em to equal 10px or let's just pretend it does -----------------------*/
+        font-family: "freight-sans-pro", Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        }
+
+      h1, h2, h3, h4, h5 {
+        font-family: "freight-text-pro", Georgia, Times, serif;
+        font-style: normal;
+        font-weight: 400;
+        }
+
+      p, blockquote { font-size: 1.4em; line-height: 1.4em; }
+      p li {font-size:1.0em;}
+      li li {font-size:1em;}
+      p { margin-bottom: 1.4em; }
+
+      .fourcol p, .fourcol blockquote { font-size: 1.4em; }
+
+      sup {
+        height: 0;
+        line-height: 1;
+        bottom: 1em;
+        font-size: .7em;
+        color: #666662;
+        }
+
+        sup a { padding: 2px; }
+
+        ::selection {background: #61dbee; }
+        ::-moz-selection { background: #61dbee;}
+
+      .error { color: #cc092f; font-weight: bold; font-size: 1.8em; padding: 20px; display: block; padding-top: 5px; padding-bottom: 5px;}
+
+      ol { margin-bottom: 2em; }
+      ol li { list-style: decimal; list-style-position: outside; margin-left: 2em; }
+
+	    .quiet { color: #666662; }
+
+      .centered-overlay {
+        opacity:    0.0;
+        background-color: #333;
+        width:      100%;
+        height:     100%;
+        z-index:    9999;
+        top:        0;
+        left:       0;
+        position:   fixed;
+        font-size:  2.5em;
+        color:      #fff;
+        -webkit-transition: all 2s ease;
+        -moz-transition: all 2s ease;
+        -o-transition: all 2s ease;
+        transition: all 2s ease;
+      }
+
+      .black-bg {
+        opacity: 0.8;
+        -webkit-transition: all 2s ease;
+        -moz-transition: all 2s ease;
+        -o-transition: all 2s ease;
+        transition: all 2s ease;
+        }
+
+      .centered-overlay .text {
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        top: 48%;
+        vertical-align: middle;
+      }
+
+      .error-block {
+        display: block;
+        text-align: center;
+      }
+
+      .first-error-block {
+        margin-top: 50px;
+      }
+
+      .errors {
+        color: #cc092f;
+        font-size: 1.8em;
+        text-align: right;
+        display: block;
+        width: 100%;
+        padding-right: 20px;
+        margin-top: -20px;
+        margin-bottom: 10px;
+      }
+
+  /*  ----------------------------
+      HEADER / NAV
+      ---------------------------- */
+
+      header {
+        font-family: "freight-sans-pro", Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 40px;
+        }
+
+        header h1 {
+    			float:left;
+    			width: 43px;
+    			height: 43px;
+    			overflow: hidden;
+    			margin-bottom: 35px;
+    			margin-top: 3px;
+          background:#ff0000;
+          }
+
+        header h1 a {
+          width:43px;
+          height: 43px;
+          display: block;
+          }
+
+
+        header h1 a svg path {
+          fill:white;
+          -webkit-transition: all .4s ease;
+          -moz-transition: all .4s ease;
+          -o-transition: all .4s ease;
+          transition: all .4s ease;
+        }
+
+        header h1:hover {
+          background:#33332b;
+          -webkit-transition: background .4s ease;
+          -moz-transition: background .4s ease;
+          -o-transition: background .4s ease;
+          transition: background .4s ease;
+        }
+
+        header h2 {
+          font-family: "freight-text-pro",
+          Georgia, serif;
+          margin-bottom: 20px;
+          margin-left: .5em;
+          font-size: 2.0em;
+          line-height: 1.2;
+          font-style: italic;
+          color: #989890;
+          font-weight: 300;
+          float:left;
+          width:150px;
+        }
+
+
+  /*  ----------------------------
+      ABOUT US
+      ---------------------------- */
+      blockquote.about {
+        font-family: "freight-text-pro", Georgia, serif;
+        font-size: 2.6em;
+        line-height: 1.4em;
+        font-style: italic;
+        margin-bottom: 3em;
+        margin-top: 2em;
+        margin-left: 2em;
+        }
+
+        blockquote.about cite {
+          display: block;
+          font-size: .8em;
+          text-transform:
+          uppercase; letter-spacing: 1px;
+          margin-top: .3em;
+          }
+
+      .generalpage {margin-bottom: 40px;}
+        .generalpage p a { border-bottom: 1px dotted #333; }
+
+      .generalpage h4 {
+        font-family: "freight-text-pro", Georgia, serif;
+        font-size: 1.8em;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding-bottom: .4em;
+        margin-bottom: .4em;
+        margin-top: 3em;
+
+        }
+
+      .generalpage h5 {
+        font-family: "freight-sans-pro", Helvetica, Arial, sans-serif;
+        font-size: 1.6em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: .5em;
+        }
+
+      .generalpage p, .generalpage ol li, .generalpage ul li {
+        font-family: "freight-sans-pro", Helvetica, Arial, sans-serif;
+        font-size: 1.8em;
+        }
+
+        .generalpage ol li { margin-bottom: .3em; }
+
+  	  .generalpage p.aboutsub {margin-top:2.55em; font-family: "freight-sans-pro", Helvetica, Arial, sans-serif;}
+
+
+      .generalpage ul { margin-bottom: 2em; }
+      .generalpage ul li {
+        list-style: circle;
+        font-size: 1.8em;
+          margin-left: 30px;
+        list-style-position: inside;
+        margin-bottom: .4em;
+        }
+
+        .generalpage ul.textlist li {
+          padding: 0px 8px;
+          margin-left: 0;
+        }
+        .generalpage ul.textlist li.current {
+          ackground-color: #f2f2ed;
+          color: #33332b;
+          list-style: disc;
+          list-style-position: inside;
+          border-radius: 4px;
+        }
+
+        .generalpage ul li.current a {color: #33332b;}
+
+      .generalpage .sevencol ul li {
+          /*list-style: none;
+          margin-left:0;*/
+          }
+
+        .generalpage .sevencol ul ol {margin-top:.2em;}
+        .generalpage .sevencol ol li {
+          font-size: inherit;
+          list-style: decimal;
+          margin-bottom: .2em;
+          margin-left:30px;
+          }
+
+      ul.textlist { margin-bottom: 2em; }
+      ul.textlist li { font-size: 1.5em; margin-left: 1.5em; }
+
+      ul.textlist li a { color: #cc092f; }
+
+
+      #invitation_form #hitotoki_beta_email_email {
+        width: 190px;
+        padding: 5px 10px;
+        margin-right:10px;
+        margin-bottom: 24px;
+        font-size: 1.8em;
+        color: #989890;
+        font-family: "freight-sans-pro", Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        border:none;
+        border: 2px solid #e0e0da;
+        border-radius: 3px;
+        }
+
+#invitation_form #_submit {margin-bottom:11px; padding:7px 15px; }
+
+
+
+
+
+
+  /*  ----------------------------
+      PROFILE
+      ---------------------------- */
+      .line.noob {margin-bottom:-7px;}
+      .noob .profile {background: transparent url(/bundles/hitomain/images/divers.jpg) bottom right no-repeat;
+        background-size: 647.5px 389px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        min-height: 560px;}
+
+      .profile { padding-top: 40px; margin-bottom: 40px;}
+        .profile h1 {
+          font-family: "freight-text-pro", Helvetica, Arial, sans-serif;
+          display: inline;
+          font-size: 4.2em;
+          font-weight: 300;
+          line-height: 1.1;
+          margin-left:-.05em;
+          }
+          .profile .username {
+          font-family: "freight-sans-pro", Helvetica, Arial, sans-serif;
+          display: block;
+          font-size: 2.4em;
+          font-weight: 400;
+          color:#989890;
+          line-height: 1.1;
+          margin-bottom: .6em;
+          margin-top:.1em;
+
+          }
+
+
+  /*  ----------------------------
+      ERROR PAGES
+      ---------------------------- */
+
+.errorpage {min-height: 500px;}
+.errorpage h2 {font-size:6.4em; line-height: 1.1em; margin-bottom: 10px; font-family: "freight-big-pro";}
+
+
+  /*  ----------------------------
+      FOOTER
+      ---------------------------- */
+      footer { text-align: center; padding-top: 30px; font-size: 1em; }
+  	  footer ul li, footer p { font-size: 1.4em; line-height: 2em; color:#989890; }
+  	  footer p.concept { font-size: 2em; line-height: 2.4em; color: #33332b; font-family: "freight-text-pro", Georgia, Times, serif; margin-bottom: .5em;}
+	  footer p a:link, footer p a:visited {color: #cc092f;}
+	  footer p a:hover, footer p a:active { color: #cc092f; text-decoration: underline; }
+
+
+    .ias_trigger {  text-align: center; }
+      .ias_trigger a {
+        background-color: #dfdfd5;
+        padding: 10px 5px;
+        border-radius: 3px;
+        font-size: 2.0em;
+        clear: both;
+        display: block;
+        font-weight: bold;
+        color: #fff;
+        -webkit-transition-property: color, border, background-color, opacity; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease;
+        }
+
+      .ias_trigger a:hover {
+          background-color: #ff0000;
+      }
+
+}

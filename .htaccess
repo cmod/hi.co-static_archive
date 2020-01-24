@@ -1,0 +1,14 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^i.hitotoki.org
+RewriteRule ^(.*)$ https://hitotoki.org/i.hitotoki.org/$1 [L,NC,QSA]
+
+RewriteCond %{HTTP_HOST} ^classic.hitotoki.org
+RewriteRule ^(.*)$ https://hitotoki.org/classic/$1 [L,NC,QSA]
+
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+
