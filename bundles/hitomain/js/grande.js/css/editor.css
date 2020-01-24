@@ -1,0 +1,121 @@
+@font-face {
+  font-family: medium-icons;
+  src: url("/bundles/hitomain/js/grande.js/css/fonts/medium-icons.woff");
+}
+
+.g-body {
+  /*-webkit-font-smoothing: antialiased;*/
+  /*text-rendering: optimizeLegibility;*/
+  /*font-family: "freight-sans-pro", Helvetica, Arial, sans-serif;*/
+  /*min-width: 750px;*/
+  width: 100%;
+  color: #33332b;
+  font-size: 1.8em;
+}
+
+.g-body h1,
+.g-body p,
+.g-body blockquote,
+.g-body ol,
+.g-body ul {
+  margin-bottom: 15px;
+  font-size: 1.0em;
+}
+
+.g-body article {
+  outline-style: none;
+  font-size: 1.0em;
+}
+
+/* Override webkit's <article> default */
+.g-body div {
+  font-size: 1.0em;
+  padding-bottom: 5px;
+}
+
+.g-body span {
+  font-size: 1.0em !important;
+}
+
+.g-body p {
+  font-size: 1.0em;
+  line-height: 1.3em;
+  padding-bottom: 5px;
+}
+
+.g-body h1 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.g-body h2 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.g-body header {
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+.g-body section {
+  max-width: 750px;
+  margin: auto;
+}
+
+.g-body blockquote {
+  font-weight: 400;
+  font-style: italic;
+  border-left: 6px solid #ccc;
+  padding-left: 20px;
+  margin-left: -26px;
+}
+
+.g-body a {
+  text-decoration: underline;
+  color: #333332;
+}
+
+.g-body ol, .g-body ul {
+  list-style: none;
+  list-style-image: none;
+  margin-left: 0;
+  margin-top: 0;
+  padding-left: 0;
+  font-size: 1.0em;
+}
+
+.g-body li {
+  list-style: none;
+  margin: 0;
+}
+
+.g-body ol li:before,
+.g-body ul li:before {
+  width: 30px;
+  display: inline-block;
+}
+
+.g-body ol {
+  counter-reset: post;
+}
+
+.g-body ol li:before {
+  font-weight: bold;
+  counter-increment: post;
+  content: counter(post) ".";
+}
+
+.g-body ul li:before {
+  font-family: "medium-icons";
+  content: "\e028";
+  text-decoration: none;
+  font-size: 1.0em;
+}
+
+.g-body hr {
+  display: block;
+  width: 20%;
+  margin: 30px auto 20px auto;
+  border: 1px solid #dededc;
+}
