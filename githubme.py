@@ -7,7 +7,7 @@ cnt = 0
 total = 0
 for fp in repo.untracked_files:
     repo.index.add([fp])
-    if (cnt > 100):
+    if (cnt > 500):
         print(cnt, " + ", total)
         repo.index.commit("archive commit #"+str(total))
         origin.push()
